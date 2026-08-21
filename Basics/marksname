@@ -1,0 +1,29 @@
+package javabasics;
+import java.util.Scanner;
+
+public class marksname {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int marks[]=new int[3];
+		String names[]=new String[3];
+		for(int i=0;i<3;i++) {
+			System.out.println("enter marks and name of student: "+(i+1));
+			marks[i]=scan.nextInt();
+			scan.nextLine();
+			names[i]=scan.nextLine();
+			}int s=1;
+			for(int i=0;i<3;i++) {
+				if(marks[i]>50) {
+					System.out.println(s+ names[i]+"has scored"+marks[i]);
+					s++;
+
+					
+				}
+			}
+		
+		
+
+	}
+
+}
