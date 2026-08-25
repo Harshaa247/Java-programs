@@ -1,0 +1,24 @@
+package javabasics;
+
+public class lcminarray {
+	public static int har(int a,int b) {
+		int big=Math.max(a, b);
+		int small=Math.min(a, b);
+		int s=big;
+		while(true) {
+			if(big%small==0)
+				break;
+			big=big+s;
+		}return big;
+		}
+	public static void main(String[] args) {
+		int a[]= {12,14,15,16,76,54,34};
+		int lcm=a[0];
+		for(int i=1;i<7;i++) {
+			lcm=har(lcm,a[i]);
+			
+		}System.out.println(lcm);
+		
+	}
+
+}
